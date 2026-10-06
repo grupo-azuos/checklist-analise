@@ -1,4 +1,6 @@
 import { tasks } from './schema/tasks.schema';
+import { companies } from './schema/companies.schema';
+import { checklists, checklistTasks } from './schema/checklists.schema';
 
 /**
  * O objeto de schema que o Drizzle exige para as consultas relacionais.
@@ -12,6 +14,9 @@ import { tasks } from './schema/tasks.schema';
  */
 export const drizzleSchema = {
   tasks,
+  companies,
+  checklists,
+  checklistTasks,
 };
 
 export type DrizzleSchema = typeof drizzleSchema;
